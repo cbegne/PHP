@@ -1,0 +1,76 @@
+body {
+  background-image: url("https://www.walldevil.com/wallpapers/a79/background-black-wood-wallpaper-computer-images.jpg");
+  width: 98%;
+  margin: 5px;
+}
+
+td {
+  border: 1px solid grey;
+  width: 5.55%;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.mass {
+  font-size: 1vw;
+  text-align: right;
+}
+
+.number {
+  font-size: 1vw;
+  text-align: left;
+}
+
+.element {
+  text-align: center;
+  color: black;
+  font-size: 2vw;
+}
+
+.empty {
+  border: none;
+}
+
+.hydrogen {
+  background-color: #B40404;
+}
+
+.noble-gas {
+  background-color: #FFBF00;
+}
+
+.alkali-metals {
+  background-color: #E2A9F3;
+}
+
+.alkaline-earth-metals {
+  background-color: #819FF7;
+}
+
+.semiconductors {
+  background-color: #FAAC58;
+}
+
+.other-nonmetals {
+  background-color: #81F79F;
+}
+
+.halogens {
+  background-color: #8A4B08;
+}
+
+.other-metals {
+  background-color: #01A9DB;
+}
+
+.transition-metals {
+  background-color: #BDBDBD;
+}
+
+#molecule{
+  width: 15%;
+  height: auto;
+}

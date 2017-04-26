@@ -1,0 +1,44 @@
+ul {
+  background-color: #003366;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #003166;
+}
+
+.nav_menu {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.drop_button {
+  color: white;
+}
+
+.drop_content {
+  display: none;
+  position: absolute;
+  width: 100px;
+}
+
+ul.drop_content li a:active {
+  color: #990033;
+}
+
+.nav_menu:hover {
+  background-color: #004080;
+}
+
+.nav_menu:hover .drop_content {
+  display: block;
+  background-color: #e6f2ff;
+}
