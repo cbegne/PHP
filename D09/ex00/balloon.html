@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function getBig() {
+        var elem = document.getElementById('balloon');
+        var h = Number(elem.offsetHeight) + 10;
+        var c = elem.style.backgroundColor;
+        if (h < 420) {
+          elem.style.height = h + 'px';
+          elem.style.width = h + 'px';
+        }
+        else {
+          elem.style.height = '200px';
+          elem.style.width = '200px';
+        }
+        if (c == 'red')
+          elem.style.backgroundColor = 'green';
+        else if (c == 'green')
+          elem.style.backgroundColor = 'blue';
+        else if (c == 'blue')
+          elem.style.backgroundColor = 'red';
+      }
+      function getSmall() {
+        var elem = document.getElementById('balloon');
+        var h = Number(elem.offsetHeight) - 5;
+        var c = elem.style.backgroundColor;
+        if (h > 200) {
+          elem.style.height = h + 'px';
+          elem.style.width = h + 'px';
+        }
+        if (c == 'red')
+          elem.style.backgroundColor = 'blue';
+        else if (c == 'blue')
+          elem.style.backgroundColor = 'green';
+        else if (c == 'green')
+          elem.style.backgroundColor = 'red';
+      }
+    </script>
+    <title>Balloon</title>
+  </head>
+  <body>
+    <div id='balloon' onclick="getBig()" onmouseleave="getSmall()" style="background-color:red; width:200px; height:200px; border-radius:50%; margin:auto">
+
+    </div>
+  </body>
+</html>
